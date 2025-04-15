@@ -1,8 +1,20 @@
 <?php
-
+/**
+ * Clase Header
+ * 
+ * Función para crear el Header de la página
+ * 
+ * @author Profesor
+ */
 class Header {
     
     // Método para mostrar el encabezado
+    /**
+     * Función mostrarHeader
+     *
+     * Función para mostrar el Header
+     * @return void
+     */
     public function mostrarHeader() {
         // Imprime la estructura básica de un documento HTML con el encabezado y los estilos
         echo '<!DOCTYPE html>

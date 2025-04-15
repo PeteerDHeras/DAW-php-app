@@ -1,8 +1,20 @@
 <?php
-
+/**
+ * Clase Footer
+ * 
+ * Esta clase modifica el Footer de la página a través de una función.
+ * 
+ * @author Profesor
+ */
 class Footer {
 
    // Método para mostrar el pie de página
+   /**
+    * Función mostrarFooter
+    *
+    * Función que para agregar el footer.
+    * @return void
+    */
    public function mostrarFooter() {
         // Imprime el HTML del pie de página
         echo '<div class="footer text-center bg-dark text-white py-2">

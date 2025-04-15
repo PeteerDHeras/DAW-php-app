@@ -1,5 +1,11 @@
 <?php
-
+/**
+ * Clase Connexio
+ * 
+ * Esta clase gestiona la conexión con la base de datos.
+ * 
+ * @author Pedro
+ */
 class Connexio {
     //Dades de la connexió a la base de dades la_meva_botiga.
     private $host = "localhost";

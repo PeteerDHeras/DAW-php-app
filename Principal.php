@@ -2,14 +2,27 @@
 
 require_once('Connexio.php');
 require_once('Header.php');
-
+/**
+ * Clase Principal
+ * 
+ * Esta clase muestra la página principal de nuestra botiga, mostrando los productos y las acciones con estos.
+ * 
+ * @author Profesor
+ */
 class Principal {
     
     // Método para mostrar la lista de productos
+    /**
+     * Función mostrarProductes
+     * 
+     * Esta función muestra los productos en la página principal.
+     * @return void
+     */
     public function mostrarProductes() {
         // Obtiene la conexión a la base de datos
         $conexionObj = new Connexio();
         $conexion = $conexionObj->obtenirConnexio();
+        $conexion->set_charset("utf8");
 
         // Consulta para obtener la lista de productos con información de categorías
         $consulta = "SELECT p.id, p.nom, p.descripció, p.preu, c.nom as categoria

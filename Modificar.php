@@ -2,10 +2,24 @@
 
 require_once('Connexio.php');
 require_once('Header.php');
-
+/**
+ * Clase Modificar
+ * 
+ * Clase para modificar el producto de la botiga
+ * 
+ * @author Profesor
+ */
 class Modificar {
 
     // Método para mostrar el formulario de modificación del producto
+    /**
+     * Función mostrarFormulari
+     * 
+     * Función para editar algún producto de la botiga.
+     * 
+     * @param mixed $id ID del producto
+     * @return void
+     */
     public function mostrarFormulari($id) {
         // Verifica si el ID del producto es válido
         if (!isset($id) || !is_numeric($id)) {
